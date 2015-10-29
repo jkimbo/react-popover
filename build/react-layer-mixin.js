@@ -55,7 +55,7 @@ var ReactLayerMixin = function ReactLayerMixin() {
     },
     _layerUnrender: function _layerUnrender() {
       if (this.layerWillUnmount) this.layerWillUnmount(this.layerContainerNode);
-      (0, _react.unmountComponentAtNode)(this.layerContainerNode);
+      (0, _reactDom.unmountComponentAtNode)(this.layerContainerNode);
     }
   };
 };
